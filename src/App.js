@@ -6,12 +6,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {
-          user ?
-          <Routes path="/" element={<Login/>}/>
-          :
-          <Routes path="/" element={<Home/>}/> 
-        }
+      <Routes>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/home" element={<Home/>}/> 
+          </Routes>
       </BrowserRouter>
     </div>
   );

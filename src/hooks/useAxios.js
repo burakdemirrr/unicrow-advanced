@@ -13,7 +13,6 @@ const useAxios = () => {
         .finally(()=>setLoading(false))
     },[])
 
- 
 
   return {response,error,loading}
     

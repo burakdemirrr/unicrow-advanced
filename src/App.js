@@ -8,13 +8,18 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
         {
-          !user ? <Route path="/" element={<Login/>}/> 
-          : <Route path="/home" element={<Home/>}/> 
+          !user ? 
+          <Routes>
+          <Route path="/" element={<Login/>}/>
+           </Routes>
+          : 
+          <Routes>
+            <Route path="/home" element={<Home/>}/> 
+          </Routes>
+          
         }
           
-        </Routes>
       </BrowserRouter>
     </div>
   );

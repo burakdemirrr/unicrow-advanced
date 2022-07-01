@@ -1,6 +1,15 @@
 import React from 'react'
 import "./Table.scss"
+import {useNavigate} from "react-router-dom"
 const Table = ({films}) => {
+
+  const navigate=useNavigate();
+  let abe =(title)=>{ 
+    const ind=films.findIndex(film => film.Title == title);
+    console.log(ind+1);
+    return ind+1;
+  }
+
   return (
     <div>
   <table>
@@ -11,12 +20,12 @@ const Table = ({films}) => {
   </tr>
 
   {
-    films && films.map((item)=>(
+    films && films.map((item,index)=>(
       <tr>
         <td>{item.Runtime}</td>
         <td>{item.Title}</td>
         <td>{item.Year}</td>
-        <button>Düzenle</button>
+        <button onClick={()=>navigate(`/single/${abe(item.Title)}`)}>Düzenle</button>
       </tr>
     ))
   }

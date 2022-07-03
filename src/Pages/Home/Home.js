@@ -20,7 +20,6 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <Navbar/>
       <Table films={currentFilms} currentPage={currentPage}/>
       <Pagination paginate={paginate}/>
     </div>

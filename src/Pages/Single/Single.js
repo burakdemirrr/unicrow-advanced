@@ -21,7 +21,6 @@ const Single = () => {
 
   return (
     <div>
-      <Navbar/>
       <div className="container">
       <div className="img_container">
         <img src={film.Poster} alt="Film Posteri" />

@@ -7,6 +7,7 @@ import Single from "./Pages/Single/Single"
 import { useEffect } from 'react';
 import useAxios from './hooks/useAxios';
 import Add from './Pages/Add/Add';
+import Navbar from './components/Navbar/Navbar';
 function App() {
   const { response } = useAxios();
 
@@ -25,9 +26,9 @@ function App() {
             </Routes>
             :
             <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/single/:id" element={<Single />} />
-              <Route path="/add" element={<Add />} />
+              <Route path="/home" element={<><Navbar user={user}/><Home /></>} />
+              <Route path="/single/:id" element={<><Navbar user={user}/><Single /></>} />
+              <Route path="/add" element={<><Navbar user={user}/><Add /> </>} />
             </Routes>
         }
       </BrowserRouter>

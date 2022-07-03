@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Navbar from '../../components/Navbar/Navbar';
-import useAxios from '../../hooks/useAxios';
 import "./Home.scss"
 import Table from "./Table"
 const Home = () => {

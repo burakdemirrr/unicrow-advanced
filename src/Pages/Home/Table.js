@@ -6,7 +6,7 @@ const Table = ({films}) => {
 
   const navigate=useNavigate();
   let abe =(title)=>{ 
-    const ind=films.findIndex(film => film.Title == title);
+    const ind=films.findIndex(film => film.Title === title);
     console.log(ind+1);
     return ind+1;
   }

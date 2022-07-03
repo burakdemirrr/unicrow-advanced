@@ -31,7 +31,7 @@ const Table = ({films}) => {
   {
     filteredfilms && filteredfilms.map((item)=>(
       <tr className=''>
-        <td>{item.Runtime}</td>
+        <td>{`${abe(item.Title)}`}</td>
         <td>{item.Title}</td>
         <td>{item.Year}</td>
         <button className='duzenle' onClick={()=>navigate(`/single/${abe(item.Title)}`)}>Düzenle</button>

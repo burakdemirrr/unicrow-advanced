@@ -1,18 +1,20 @@
 table{
   margin:50px auto;
   width:100%;
- 
 td{
-  padding:25px 150px;
-  
+  padding:25px 120px;
 }
 tr{
   font-size:19px;
+  .ide{
+    padding-right:65px;
+  }
 }
 
 th{
   font-size: 25px;
   padding-right:55px;
+  
 }
 .duzenle{
   width:100px;
@@ -69,6 +71,17 @@ th{
   margin-top:0px;
   margin-right: 10px;
 }
-
 }
 
+@media (max-width:1024px){
+ table{
+  td{
+    padding:10px 50px;
+  }
+  tr{
+    .ide{
+      padding-left:43px;
+    }
+  }
+ }
+}

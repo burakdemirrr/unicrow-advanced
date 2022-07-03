@@ -14,7 +14,7 @@ const Home = () => {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentFilms = films.slice(indexOfFirstPost, indexOfLastPost);
+  const currentFilms = films?.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = pageNumber => setCurrentPage(pageNumber);
 

@@ -1,4 +1,5 @@
 import { Avatar } from '@mui/material'
+import { deepPurple } from '@mui/material/colors'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -17,7 +18,7 @@ const Navbar = ({user}) => {
   }
   return (
     <div className='navbar'>
-      <Avatar>{user.email[0].toUpperCase()}</Avatar>
+      <Avatar  sx={{ bgcolor: deepPurple[500] }}> {user.email[0].toUpperCase()}</Avatar>
       <p>{user.email}</p>
 
       <button onClick={handleLogout}>Logout</button>

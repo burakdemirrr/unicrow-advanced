@@ -27,6 +27,7 @@ const Table = ({films,currentPage}) => {
         <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)} placeholder="Film Ara" />
       </div>
   <table>
+    <tbody>
     <tr>
     <th className='ide'>ID</th>
     <th>Filmin Adı</th>
@@ -35,7 +36,7 @@ const Table = ({films,currentPage}) => {
 
   {
     filteredfilms && filteredfilms.map((item)=>(
-      <tr className=''>
+      <tr className='' key={item.Title}>
         <td>{`${abe(item.Title)}`}</td>
         <td>{item.Title}</td>
         <td>{item.Year}</td>
@@ -43,7 +44,7 @@ const Table = ({films,currentPage}) => {
       </tr>
     ))
   }
-  
+  </tbody>
 </table>
       
       <div className="button_container">

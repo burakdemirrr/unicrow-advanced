@@ -3,8 +3,13 @@
     align-items: center;
     justify-content: flex-end;
     gap:20px;
-    padding:5px 126px;
+    padding:5px 46px;
+    width:100%;
     background-color: #EBEBFB;
+    p{
+        font-weight: bold;
+        font-size:.9rem;
+    }
     button{
         width:100px;
         outline:0;

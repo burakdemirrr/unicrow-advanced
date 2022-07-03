@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Table.scss"
 import {useNavigate} from "react-router-dom"
 const Table = ({films}) => {
+  const [search,setSearch]=useState("");
 
   const navigate=useNavigate();
   let abe =(title)=>{ 
@@ -9,9 +10,17 @@ const Table = ({films}) => {
     console.log(ind+1);
     return ind+1;
   }
+  console.log(search);
+
+  const filteredfilms=films?.filter(film=>{
+    return film.Title.toLowerCase().includes(search.toLowerCase());
+  })
 
   return (
     <div>
+      <div className="search">
+        <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)} placeholder="Film Ara" />
+      </div>
   <table>
     <tr>
     <th className='ide'>ID</th>
@@ -20,7 +29,7 @@ const Table = ({films}) => {
   </tr>
 
   {
-    films && films.map((item,index)=>(
+    filteredfilms && filteredfilms.map((item)=>(
       <tr>
         <td>{item.Runtime}</td>
         <td>{item.Title}</td>

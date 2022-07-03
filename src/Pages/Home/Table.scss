@@ -1,5 +1,5 @@
 table{
-  margin:100px auto;
+  margin:50px auto;
   width:100%;
  td{
   padding:25px 150px;
@@ -13,5 +13,21 @@ table{
  button{
   margin-top:25px;
  }
-
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 150px;
+  input{
+    font-weight: 600;
+    width:250px;
+    outline:0;
+    border:1px solid #c9c5c5;
+    background:#FAFAFA;
+    height: 45px;
+    border-radius:14px;
+    padding:0 15px;
+    color:black;
+  }
 }

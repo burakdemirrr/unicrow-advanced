@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:20px;
+    padding:5px 126px;
+    background-color: #EBEBFB;
+    button{
+        width:100px;
+        outline:0;
+        border:1px solid #c9c5c5;
+        background:#133041;
+        color:#fff;
+        cursor: pointer;
+        height: 35px;
+        border-radius:4px;
+        font-size: 13px;
+    }
+}

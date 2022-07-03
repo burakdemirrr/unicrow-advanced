@@ -19,18 +19,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Routes>
         {
           !user ?
-            <Routes>
               <Route path="/" element={<Login />} />
-            </Routes>
-            :
-            <Routes>
+            :<>
               <Route path="/home" element={<><Navbar user={user}/><Home /></>} />
               <Route path="/single/:id" element={<><Navbar user={user}/><Single /></>} />
               <Route path="/add" element={<><Navbar user={user}/><Add /> </>} />
-            </Routes>
-        }
+            </>
+        }</Routes>
       </BrowserRouter>
     </div>
   );

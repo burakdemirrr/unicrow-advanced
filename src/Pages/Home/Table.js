@@ -1,14 +1,19 @@
 import React, { useState } from 'react'
 import "./Table.scss"
 import {useNavigate} from "react-router-dom"
-const Table = ({films}) => {
+const Table = ({films,currentPage}) => {
   const [search,setSearch]=useState("");
 
   const navigate=useNavigate();
   let abe =(title)=>{ 
     const ind=films.findIndex(film => film.Title === title);
-    console.log(ind+1);
-    return ind+1;
+    if(currentPage===1){
+      return ind+1;
+    }
+    else{
+      return ind+1+(currentPage-1)*5;
+    }
+    
   }
   console.log(search);
 

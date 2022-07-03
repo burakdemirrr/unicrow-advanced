@@ -1,4 +1,19 @@
 .home{
   background-color: #EBEBFB;
   min-height: 100vh;
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap:5px;
+      margin-top:25px;
+      font-weight: bold;
+      font-size:1.7rem;
+    }
+  }
 }
+

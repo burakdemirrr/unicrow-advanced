@@ -14,7 +14,7 @@ th{
   font-size: 25px;
   padding-right:105px;
 }
-button{
+.duzenle{
   width:100px;
   outline:0;
   border:1px solid #c9c5c5;
@@ -46,6 +46,28 @@ button{
     padding:0 15px;
     color:black;
   }
+
+
+}
+
+.button_container{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  button{
+  width:250px;
+  outline:0;
+  border:1px solid #c9c5c5;
+  background:#133041;
+  color:#fff;
+  cursor: pointer;
+  height: 45px;
+  border-radius:4px;
+  padding:0 10px;
+  font-size: 17px;
+  margin-top:20px;
+  margin-right: 10px;
+}
 
 }
 

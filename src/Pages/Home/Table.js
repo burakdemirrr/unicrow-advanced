@@ -34,14 +34,16 @@ const Table = ({films}) => {
         <td>{item.Runtime}</td>
         <td>{item.Title}</td>
         <td>{item.Year}</td>
-        <button onClick={()=>navigate(`/single/${abe(item.Title)}`)}>Düzenle</button>
+        <button className='duzenle' onClick={()=>navigate(`/single/${abe(item.Title)}`)}>Düzenle</button>
       </tr>
     ))
   }
   
 </table>
       
-
+      <div className="button_container">
+        <button onClick={()=>navigate("/add")} >Film Ekle</button>
+      </div>
     </div>
   )
 }

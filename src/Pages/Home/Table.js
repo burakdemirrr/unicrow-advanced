@@ -30,7 +30,7 @@ const Table = ({films}) => {
 
   {
     filteredfilms && filteredfilms.map((item)=>(
-      <tr>
+      <tr className=''>
         <td>{item.Runtime}</td>
         <td>{item.Title}</td>
         <td>{item.Year}</td>

@@ -4,7 +4,15 @@ import Login from "./Pages/Login/Login"
 import Home from "./Pages/Home/Home"
 import {useSelector} from "react-redux";
 import Single from "./Pages/Single/Single"
+import { useEffect } from 'react';
+import useAxios from './hooks/useAxios';
 function App() {
+  const {response}=useAxios();
+  
+  useEffect(()=>{
+       localStorage.setItem("films",JSON.stringify(response));
+  },[response]);
+
   const user=useSelector(state=>state.user.user);
   return (
     <div className="App">
@@ -16,7 +24,7 @@ function App() {
            </Routes>
           : 
           <Routes>
-            <Route path="/home" element={<Home/>}/> 
+            <Route path="/home" element={<Home />}/> 
             <Route path="/single/:id" element={<Single/>}/> 
           </Routes>
           

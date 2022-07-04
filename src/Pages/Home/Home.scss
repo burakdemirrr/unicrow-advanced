@@ -13,7 +13,17 @@
       margin-top:25px;
       font-weight: bold;
       font-size:1.7rem;
+    li{
+      p{
+        cursor: pointer;
+        &:hover{
+        color:rgb(159, 102, 228);
+      }
+      }
     }
+    }
+
   }
+
 }
 

@@ -12,7 +12,6 @@ const Navbar = ({user}) => {
 
   const handleLogout=(e)=>{
     e.preventDefault();
-    localStorage.removeItem('films')
     dispatch(logout())
     navigate("/")
   }

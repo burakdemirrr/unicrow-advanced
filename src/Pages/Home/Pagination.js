@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Home.scss"
 
 const Pagination = ({ paginate }) => {
   const pageNumbers = [];

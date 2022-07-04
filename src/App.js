@@ -8,14 +8,24 @@ import { useEffect } from 'react';
 import useAxios from './hooks/useAxios';
 import Add from './Pages/Add/Add';
 import Navbar from './components/Navbar/Navbar';
+import { CircularProgress } from '@mui/material';
 function App() {
-  const { response } = useAxios();
+  const { response,loading } = useAxios();
+
+  const user = useSelector(state => state.user.user);
 
   useEffect(() => {
     localStorage.setItem("films", JSON.stringify(response));
   }, [response]);
 
-  const user = useSelector(state => state.user.user);
+  if(loading){
+    return(
+        <div className="progres">
+            <CircularProgress />
+        </div>
+    )
+}
+  
   return (
     <div className="App">
       <BrowserRouter>

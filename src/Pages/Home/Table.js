@@ -6,7 +6,7 @@ const Table = ({films,currentPage}) => {
 
   const navigate=useNavigate();
   let abe =(title)=>{ 
-    const ind=films.findIndex(film => film.Title === title);
+    const ind=films?.findIndex(film => film.Title === title);
     if(currentPage===1){
       return ind+1;
     }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import {useNavigate, useParams} from "react-router-dom"
-import Navbar from '../../components/Navbar/Navbar';
 import "./Single.scss"
 
 const Single = () => {
@@ -18,6 +17,13 @@ const Single = () => {
     localStorage.setItem("films",JSON.stringify(deleted));
     navigate("/home");
   }
+  const handleEdit=(film)=>{
+    film.Title=name;
+    film.Year=date;
+    localStorage.setItem("films",JSON.stringify(films));
+    navigate("/home");
+  }
+  
 
   return (
     <div>
@@ -35,7 +41,7 @@ const Single = () => {
 
       <div className="button_container">
         <button onClick={()=>handleDelete(film)}>Sil</button>
-        <button>Düzenle</button>
+        <button onClick={()=>handleEdit(film)}>Düzenle</button>
       </div>
      
       </div>

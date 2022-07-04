@@ -4,7 +4,9 @@ Proje Unicrow şirketinin gönderdiği kılavuza göre yapılmıştır.Projemizi
 ## Filmia
 
 Projemiz özet olarak kullanıcının film bilgilerini, listeleyebildiği,
-ekleyebildiği, silebildiği, değiştirilebildiği ve detaylarını görebildiği bir çalışmadır.Bunun için gerekli materyaller tarandı ve projeye başlandı
+ekleyebildiği, silebildiği, değiştirilebildiği ve detaylarını görebildiği bir çalışmadır.Bunun için gerekli materyaller tarandı ve projeye başlandı.
+Javascript kütüphanesi olarak ReactJs kullanıldı.Css pre-processor olarak Scss kullanıldı.
+
 
 
 ## Görüntüler

@@ -33,6 +33,10 @@
             padding:0 10px;
             margin-bottom: 10px;
             font-size: 17px;
+            &:hover{
+                background:rgb(72, 35, 127);
+                color:#ffffff;
+            }
         }
         input{
             font-weight: 600;

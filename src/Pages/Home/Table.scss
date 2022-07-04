@@ -29,6 +29,10 @@ th{
   font-size: 17px;
   margin-top:20px;
   margin-right: 10px;
+  &:hover{
+    background:rgb(72, 35, 127);
+    color:#ffffff;
+}
 
 }
 
@@ -70,6 +74,10 @@ th{
   font-size: 17px;
   margin-top:0px;
   margin-right: 10px;
+  &:hover{
+    background:rgb(72, 35, 127);
+    color:#ffffff;
+}
 }
 }
 

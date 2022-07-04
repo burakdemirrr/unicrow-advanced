@@ -39,4 +39,7 @@ npm start
 
 Bu kadar!
 
+## Deploy
+https://unicrow-advanced.vercel.app/
+
 
